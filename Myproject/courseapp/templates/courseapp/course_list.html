@@ -1,8 +1,25 @@
-<h1>Available Courses</h1>
+{% extends "base.html" %}
+{% block content%}
+    
+<h1 class="mb-3">Available Courses</h1>
 {% for course in Courses%}
-<p>
+<div class="card mb-3">
+    <div class="card-body">
+        <h3 class="card-title">
+            {{course.name}}
+        </h3>
+        <p class="card-text">
+            Duration : {{course.duration}} months 
+        </p>
+        <a href="#" class="btn btn-primary">
+            view course
+        </a>
+    </div>
+</div>
+{% comment %} <p>
     {{course.name}}-- {{course.duration}} months 
-</p>
+</p> {% endcomment %}
 {%empty%}
 <p>no couses available</p>
 {% endfor %}
+{% endblock%}
