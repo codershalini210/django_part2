@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content%}
+    
+<h1 class="mb-3"> Course Details</h1>
+ <a href="{% url 'courselist' %}" class="btn btn-primary">
+            view All courses
+        </a>
+<div class="card mb-3">
+    <div class="card-body">
+        <h3 class="card-title">
+            {{course.name}}
+        </h3>
+        <p class="card-text">
+            Duration : {{course.duration}} months 
+        </p>
+       
+    </div>
+</div>
+{% comment %} <p>
+    {{course.name}}-- {{course.duration}} months 
+</p> {% endcomment %}
+
+
+{% endblock%}

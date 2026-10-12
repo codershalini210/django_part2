@@ -11,7 +11,7 @@
         <p class="card-text">
             Duration : {{course.duration}} months 
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="{% url 'coursedetail' course.pk %}" class="btn btn-primary">
             view course
         </a>
     </div>
