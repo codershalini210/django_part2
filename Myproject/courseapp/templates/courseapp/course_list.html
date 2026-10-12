@@ -1,0 +1,8 @@
+<h1>Available Courses</h1>
+{% for course in Courses%}
+<p>
+    {{course.name}}-- {{course.duration}} months 
+</p>
+{%empty%}
+<p>no couses available</p>
+{% endfor %}
