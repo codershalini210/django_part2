@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(105, 149, 187);
+}
+.headerimage
+{
+    height:200px;
+    width:200px;
+}
+.flex
+{
+    display: flex;
+}
